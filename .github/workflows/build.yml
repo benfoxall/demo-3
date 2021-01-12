@@ -17,13 +17,6 @@ jobs:
           npm ci
           # npm run build
 
-      - name: "Bump"
-        uses: "phips28/gh-action-bump-version@master"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag-prefix: ""
-
       - name: Publish 🚢
         uses: JS-DevTools/npm-publish@v1
         with:
