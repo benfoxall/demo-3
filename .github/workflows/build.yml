@@ -12,12 +12,12 @@ jobs:
         with:
           persist-credentials: false
 
-      # - name: Install and Build 🔧
-      #   run: |
-      #     npm ci
-      #     # npm run build
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          # npm run build
 
-      - name: Publish 🚢 
+      - name: Publish 🚢
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
