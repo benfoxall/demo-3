@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Publish
 on:
   push:
     branches:
@@ -15,13 +15,9 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run build
-          touch build/.nojekyll
+          # npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Publish 🚢 
+        uses: JS-DevTools/npm-publish@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          CLEAN: true
+          token: ${{ secrets.NPM_TOKEN }}
