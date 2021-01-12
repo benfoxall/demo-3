@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("----DEMO THREE----")
+console.log("DEMO THREE!")
