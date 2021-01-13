@@ -1,6 +1,6 @@
 {
   "name": "gh-demo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "GitHub Dev Demo 3 – tooling",
   "main": "build/index.js",
   "bin": "build/index.js",
