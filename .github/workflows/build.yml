@@ -12,6 +12,11 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Bump 🩹
+        uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install and Build 🔧
         run: |
           npm ci
