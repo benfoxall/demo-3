@@ -6,6 +6,7 @@
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.js --bundle --platform=node --minify --outfile=build/out.js",
     "start": "node index.js"
   },
   "repository": {
@@ -17,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/benfoxall/demo-3/issues"
   },
-  "homepage": "https://github.com/benfoxall/demo-3#readme"
+  "homepage": "https://github.com/benfoxall/demo-3#readme",
+  "devDependencies": {
+    "chalk-animation": "^1.6.0",
+    "esbuild": "^0.8.31"
+  }
 }
