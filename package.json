@@ -2,11 +2,10 @@
   "name": "gh-demo",
   "version": "1.0.4",
   "description": "GitHub Dev Demo 3 – tooling",
-  "main": "build/index.js",
-  "bin": "build/index.js",
+  "main": "src/index.js",
+  "bin": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.js --bundle --platform=node --minify --outfile=build/index.js",
     "start": "node src/index.js"
   },
   "repository": {
@@ -19,11 +18,9 @@
     "url": "https://github.com/benfoxall/demo-3/issues"
   },
   "homepage": "https://github.com/benfoxall/demo-3#readme",
-  "devDependencies": {
-    "chalk-animation": "^1.6.0",
-    "esbuild": "^0.8.31"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "cfonts": "^2.9.1"
+    "cfonts": "^2.9.1",
+    "chalk-animation": "^1.6.0"
   }
 }

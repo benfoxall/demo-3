@@ -1,0 +1,4 @@
+# sync with version bumping better
+
+[pull]
+    rebase = true
