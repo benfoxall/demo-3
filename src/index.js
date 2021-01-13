@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
 const chalkAnimation = require("chalk-animation");
+const CFonts = require("cfonts");
 
-chalkAnimation.rainbow("Demo 3");
+const prettyFont = CFonts.render("Demo 3");
+
+chalkAnimation.rainbow(prettyFont.string);

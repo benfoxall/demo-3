@@ -2,12 +2,12 @@
   "name": "gh-demo",
   "version": "1.0.2",
   "description": "GitHub Dev Demo 3 – tooling",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "build/index.js",
+  "bin": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild src/index.js --bundle --platform=node --minify --outfile=build/out.js",
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chalk-animation": "^1.6.0",
     "esbuild": "^0.8.31"
+  },
+  "dependencies": {
+    "cfonts": "^2.9.1"
   }
 }
