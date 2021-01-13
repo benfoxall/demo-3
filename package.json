@@ -2,11 +2,12 @@
   "name": "gh-demo",
   "version": "1.0.6",
   "description": "GitHub Dev Demo 3 – tooling",
-  "main": "src/index.js",
-  "bin": "src/index.js",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "esbuild src/index.js --bundle --platform=node  --outfile=dist/index.js && rm -rf fonts && mkdir fonts && cp node_modules/cfonts/fonts/block.json ./fonts/"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,10 @@
     "url": "https://github.com/benfoxall/demo-3/issues"
   },
   "homepage": "https://github.com/benfoxall/demo-3#readme",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "cfonts": "^2.9.1",
-    "chalk-animation": "^1.6.0"
-  }
+    "chalk-animation": "^1.6.0",
+    "esbuild": "^0.8.31"
+  },
+  "dependencies": {}
 }

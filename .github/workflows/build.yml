@@ -17,10 +17,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Install and Build 🔧
-      #   run: |
-      #     npm ci
-      #     npm run build
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
 
       - name: Publish 🚢
         uses: JS-DevTools/npm-publish@v1
